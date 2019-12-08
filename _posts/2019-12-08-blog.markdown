@@ -1,0 +1,55 @@
+---
+layout: post
+title:  "blog"
+categories: meta
+---
+
+![logo](/Content/logo.png)
+
+Hey welcome to blog. here's some stuff i've been working on
+
+## games
+
+My main project right now is a game called Roobos, 
+
+<iframe width="480" height="360" src="https://www.youtube.com/embed/Otsj_qku5gY" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+The game is a big exploration of playstation 1 aesthetics and gameplay, after being inspired by recent research I've been doing into the console. It's a fascinating time for gamedev, with a ton of unique ideas that never seemed to have been followed through with in future gens. also i love to Write Bangers and this is a great platform to do so
+
+## 3d art
+
+I keep trying to develop my 3d art skills, for both Roobos and other ideas for games and music videos, but continually struggle with creating humanoids. To work around this recently I started experimenting with more abstract designs, to get more personality and deal less with accurate proportions. I've really been enjoying this process so far!
+
+<blockquote class="twitter-tweet" data-dnt="true"><p lang="und" dir="ltr"><a href="https://t.co/DPkfVZ4fFg">pic.twitter.com/DPkfVZ4fFg</a></p>&mdash; delete spotify (@jazzmickle) <a href="https://twitter.com/jazzmickle/status/1200099742426042373?ref_src=twsrc%5Etfw">November 28, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+
+Rigging/animating was simple enough, and creating new characters and little scenes with this stylised aesthetic has been a ton of fun to play with
+
+<blockquote class="twitter-tweet" data-conversation="none" data-dnt="true"><p lang="en" dir="ltr">*sigh* yes, capitalism is bad but you still need to get up <a href="https://t.co/B4jgb0Vb4n">pic.twitter.com/B4jgb0Vb4n</a></p>&mdash; delete spotify (@jazzmickle) <a href="https://twitter.com/jazzmickle/status/1200501280835358720?ref_src=twsrc%5Etfw">November 29, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+
+## music
+
+i made a couple music videos recently which was super fun!<br/>
+<sub>(psst you can buy the first track right [here!](https://queenjazz.bandcamp.com/track/friends))</sub>
+<iframe width="480" height="360" src="https://www.youtube.com/embed/DjrL2T5GfjM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<iframe width="480" height="360" src="https://www.youtube.com/embed/HffGCaIus_4" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+and some other smaller stuff:
+
+<table style="border:0px">
+    <td style="border:0px">some chiptune<p></p>
+
+<figure class="video_container">
+  <video controls="true" allowfullscreen="true" height = "300px">
+    <source src="../../../../Content/synthblap.mp4" type="video/mp4">
+  </video>
+</figure></td>
+
+<td style="border:0px">and some downtempo thing<p></p>
+
+<figure class="video_container">
+  <video controls="true" allowfullscreen="true" height = "300px">
+    <source src="../../../../Content/bass2.mp4" type="video/mp4">
+  </video>
+</figure></td>
+</table>
+
