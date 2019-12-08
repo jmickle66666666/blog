@@ -4,7 +4,7 @@ title:  "blog"
 categories: meta
 ---
 
-![logo](/Content/logo.png)
+![blog2](/Content/logo.png)
 
 Hey welcome to blog. here's some stuff i've been working on
 
