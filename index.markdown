@@ -5,5 +5,19 @@
 layout: home
 ---
 
-![blog](/Content/logo.png)
-![http stands for Here Toots Thine Post's,](/Content/subtitle.png)
+<style type="text/css">
+  .center-image
+{
+    margin: 0 auto;
+    display: block;
+}
+</style>
+
+![blog](/Content/logo.png){: .center-image }
+![http stands for Here Toots Thine Post's,](/Content/subtitle.png){: .center-image }
+
+Blogs Are Back In A Big Way
+
+Also webrings: check out the [links](webring/) page
+
+And subscribe to the RSS feed below

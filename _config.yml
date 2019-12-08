@@ -23,7 +23,7 @@ email: jazz@goatpox.net
 description: >- # this means to ignore newlines until "baseurl:"
   tech art, gamedev, music and whatever
 baseurl: "/blog" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://jmickle66666666.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jazzmickle
 github_username:  jmickle66666666
 
