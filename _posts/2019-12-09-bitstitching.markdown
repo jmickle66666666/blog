@@ -4,7 +4,7 @@ title:  "bitstitching"
 categories: techart
 ---
 
-![bitstitching](/blog/Content/bitstitching.png)
+![bitstitching]({{ path.path }} /blog/Content/bitstitching.png)
 
 I've been thinking a lot about bits and bytes, and really low level compression of data. In a beautifully compressed epiphany last night I came up with an ingenious way of compressing 16 pixels into the space of a single color. Here's how my adventure went.
 
@@ -29,7 +29,7 @@ Color(
 
 Each bit (or `0`) here is just On or Off. Using binary, these rows of bits can represent every whole number from 0 to 255, which is our standard color spectrum for pixels on a screen.
 
-I want to take these to pieces and see what else we can do with these, for instance if we just take each bit as black or white, ```1 1 0 1 0 1 0 0``` would become ![bit_a](/blog/Content/bit_a.png)
+I want to take these to pieces and see what else we can do with these, for instance if we just take each bit as black or white, ```1 1 0 1 0 1 0 0``` would become ![bit_a]({{ path.path }} /blog/Content/bit_a.png)
 
 I took this one step further and brought in the green byte too. Using 4 bits as a row of 4 pixels, you can create a 4 x 4 grid of pixels with just two bytes:
 
@@ -46,7 +46,7 @@ Green - 0 0 1 0
     </td>
 
 <td style="border:0px" width="70%"><div markdown="1">
-![bit_b](/blog/Content/bit_b.png)
+![bit_b]({{ path.path }} /blog/Content/bit_b.png)
 </div></td>
 </table>
 
@@ -65,7 +65,7 @@ What this means is i'm taking 3 bits from each channel, and using that to repres
 
 If your first thought is "that's not a lot of color depth" then... yes you're right its terrible. To give you an idea of how much color is lost; here's a color spectrum compresed to this new depth:
 
-![bit_c](/blog/Content/bit_c.png)
+![bit_c]({{ path.path }} /blog/Content/bit_c.png)
 
 But hey who cares, we're having fun right
 
@@ -145,12 +145,12 @@ for (int i = 0; i < 8; i++) {
 
 For each 4x4 block of pixels, I need to get 2 different colors to store. The way I decided to approach this was to take the threshold we defined earlier, and then average out all the colors found in each region:
 
-![bit_e](/blog/Content/bit_e.png)
+![bit_e]({{ path.path }} /blog/Content/bit_e.png)
 
 Now we can compress any arbitrary image, and output it through our new shader!
 
 <sub>top: original (512x256), middle: compressed, bottom: raw compressed data (126x64)</sub>
-![bit_d](/blog/Content/bit_d.png)
+![bit_d]({{ path.path }} /blog/Content/bit_d.png)
 
 ## conclusion
 
