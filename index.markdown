@@ -19,5 +19,3 @@ layout: home
 Blogs Are Back In A Big Way
 
 Also webrings: check out the [links](webring/) page
-
-And subscribe to the RSS feed below
