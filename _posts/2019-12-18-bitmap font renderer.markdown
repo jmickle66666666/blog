@@ -240,6 +240,7 @@ I also wrote a little bit of formatting syntax so I could write text files with 
 Thanks for reading!!
 
 Feel free to contact me via [twitter](https://twitter.com/jazzmickle) if you have any questions or comments!!!! 
+And please consider supporting me on [patreon](http://patreon.com/jazzmickle) so I can keep making stuff like this!!!
 
 # Appendix
 
