@@ -1,0 +1,73 @@
+---
+layout: post
+title:  "Nodes; Good?"
+---
+
+
+![nodes_title]({{ path.path }} /blog/Content/nodes_title.png)
+
+As part of my work on [Chisel](https://github.com/RadicalCSG/Chisel.Prototype), I have been experimenting with Node Graphs to design procedural generation tools, to enable powerful non-destructive workflows for level design. I have lots of thoughts on these topics now.
+
+![nodes_c]({{ path.path }} /blog/Content/nodes_c.png)
+
+## Procedural Generation
+
+If you aren't familiar, procedural generation is defining assets by a set of instructions instead of manually. It has a huge number of benefits when creating games, the most common example is randomized levels in games such as Spelunky or Nuclear Throne. In terms of workload, it can potentially save a lot of manual labor crafting a set of bespoke levels. For design it can offload the manual labor of building a level, and let the designer describe what is created at a higher level. For example, if you decide that all the levels need to be 50% larger, maunally editing all the levels can be tedious, but using procedural generation could allow you to just tweak a single parameter and the levels will follow the new rules automatically.
+
+I highly recommend Kate Compton's talks on the subject if you want to learn more about this! [Such as this one](https://www.youtube.com/watch?v=WumyfLEa6bU).
+
+## Non destructive workflows
+
+Procedural generation doesn't have to be completely separated from manual creation though! It has a huge amount of potential as part of asset creation by applying a set of modifiers to an existing object. Here is an example using the title image for this article:
+![nodes_b]({{ path.path }} /blog/Content/nodes_b.gif)
+
+I had created a Text object in Blender, which has an Extrude property and then I apply an Array Modifier which duplicates the output. Any of these steps can be changed without having to repeat any work, which allows me to go back and change something at the start (in this example, the text itself), without having to redo all the steps after it.
+
+This workflow allows you to design at a higher level, and make bigger drastic changes without losing any work. When you are building a level, you don't often care about each individual vertex or face, but rather a higher level idea about how the level works works. If you want to create a fence that borders a road, all you care about is the abstract path of the fence, not placing every fence object individually. A procedural tool would allow you to just define the path the fence takes, which gets generated for you. You can then go back and modify the path however you please without worrying about building the entire thing again by hand.
+
+## Node Graphs
+
+![shaderforge](https://acegikmo.com/shaderforge/images/web/screenshots/sf_ss_mainpage_a.jpg)
+
+The main problem with procedural tools is the coding requirement to create them. Writing a fence generator isn't the most trivial of tasks, let alone if you are a designer without coding experience. However in recent years, many creative tools have been using node-based interfaces to help with this barrier. Many shader editors (such as Shader Forge, Amplify, or Shader Graph) have completely eliminated the need for artists to learn how to write shader code, instead working with an intuitive graphical interface to design them.
+
+## Creative Experimentation
+
+One of the highlights of working with nodes for procedural generation has been how easy and fun it has been to experiment with ideas, and I've been trying to nail down the reasons why. Shader editors make a lot of sense in this regard since it's a visual medium, and being able to preview every step along the way makes a ton of sense for the tools, but this doesn't fully explain necessarily why I've been enjoying my procgen tools in the same way. There is definitely an overlap but I think another important aspect is how encapsulated the nodes are.
+
+Every time I create a node, the natural process is to break down my idea into the simplest part; Generate a noise texture, generate a convex mesh of points, etc etc, rather than make a complex system in just a single node. This means that every node I create will be able to interact with many other immediately, and I can suddenly start plugging things together I had no intention of previously. They're just there on the graph and its just a click and drag to connect them up! When coding these systems, these ideas never spring to mind and hooking things up together can be really difficult. This hyper-modular approach I feel is a huge benefit to creativity that is really difficult to replicate in coding.
+
+## No Conclusions (yet)
+
+I didn't really have much of a conclusive point to make here, but rather my recent work has [really got my mind racing](https://twitter.com/jazzmickle/status/1223331425744756736) about the potential of node systems. I still have a lot more ideas I want to talk about so I expect I'll be writing more posts soon!
+
+Thank you for reading my Post Online! 
+
+⚠️Feel free to contact me via [twitter](https://twitter.com/jazzmickle) if you have any questions or comments!!!! 
+
+💛And please consider supporting me on [patreon](http://patreon.com/jazzmickle) so I can keep making stuff!!!
+
+
+-- - - --- - -- -- -
+
+
+
+## Addendums
+# More thoughts
+Dan Fessler has some real good node thoughts in a thread [here](https://twitter.com/DanFessler/status/1132569486651846657).
+# Reinventing Wheels 
+
+Here is a list of popular node based editors:
+* Shader Forge
+* Unity Shader Graph
+* Unreal Blueprints
+* Amplify Shader Editor
+* Twine
+* Blender Shader Editor
+* Playmaker
+
+Every one of these uses a unique system for their node graphs. Some kind of standardised node-based language/system would be really nice! I've been using [xnode](https://github.com/Siccity/xNode) in unity and really enjoying it, but it is specific to Unity rather than a generalised tool.
+
+# Functional Programming
+
+Node based systems are often basically functional programming? That's pretty cool.
