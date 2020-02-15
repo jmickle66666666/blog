@@ -24,7 +24,7 @@ drawing pixels to a screen just involves having access to individual pixels; thi
 i'm gonna be using unity because it's by far what i'm most comfortable with, but here are some other options if you want to follow along:
 - unreal, using RenderTargets
 - javascript, canvas/context has getImageData() setImageData() for low level pixel access
-- pico-8
+- pico-8, use can use pset(x,y,color) and pget(x,y) to read/write pixels to the screen
 - processing.org (this is a ton of fun for playing around with graphics regardless, too)
 - hey also try [dome](https://domeengine.com/) out
 
