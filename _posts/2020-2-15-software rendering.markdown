@@ -26,6 +26,7 @@ i'm gonna be using unity because it's by far what i'm most comfortable with, but
 - javascript, canvas/context has getImageData() setImageData() for low level pixel access
 - pico-8
 - processing.org (this is a ton of fun for playing around with graphics regardless, too)
+- hey also try [dome](https://domeengine.com/) out
 
 ## $pixels
 
