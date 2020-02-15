@@ -114,7 +114,13 @@ public static void DrawMesh(Mesh mesh, Color32 color)
 
 ![software_b]({{ path.path }} /blog/Content/software_b.png)
 
-wow!!!! (i actually removed some matrix transformation code from that method just so it'd be clearer to read;;; if you want the thing to scale/move correctly you will need to add that stuff!!)
+wow!!!! i actually removed some matrix transformation code from that method just so it'd be clearer to read;;; if you want the thing to scale/move correctly you will need to add that stuff!! its homework!
+
+what i do is pass in `transform.localToWorldMatrix` to the method; and you can use this to transform a point like so:
+```csharp
+matrix.MultiplyPoint3x4(myPoint);
+```
+and then you'll get a point moved to the right spot in the world.
 
 ## $fon't
 
