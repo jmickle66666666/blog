@@ -172,6 +172,7 @@ SHAD2[] instructionDefs = new SHAD2[] {
 compiling involves interating through each line of code, splitting into the separate parts and comparing the names/argument lengths to ensure they're valid instructions. then it writes each one to a pixel as we defined before, with R being the instruction index, and the GBA being the relevant arguments.
 
 ![shad2encoded]({{ path.path }} /blog/Content/shad2_encoded.png)
+
 here we can see a compiled being previewed on the cube. here the texture is square, with the instructions wrapping round, but i eventually settled on having a single row of pixels, to again ease implementation.
 
 ## so now the shader
